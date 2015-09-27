@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>breakAwake</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+        <link href="css/landing.css" rel="stylesheet" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="js/jsSuport.js"></script> <!-- ensure js is supported by only adding enhancedCSS if it is -->
+        <!-- add besides enhance js to hide search btn (visibility: hidden) and only show when focus on textbox
+             and to close nav when user hover on home li -->
+        <!-- add html SEO meta tags (author, description, etc.) -->
+        
+        <!-- argh, core content and enhanced one = blurred lines! -->
+         
+        <!-- next break 1000, but before that, 500+ with high height (600+) -->
+        
+        <!--               TODO
+            mobile
+                smaller height
+                smaller/better icons
+            mobile/tablet
+                checkar height e adicionar content se > que certo valor
+                trocar nav por nav da tablet
+            tablet
+                tirar navBtn	
+        -->
+    </head>
+    <body>
+        <header>
+            <img src="img/breakAwake.png" alt="Break Awake Logo" />
+            <nav>
+                <ul>
+                    <li><a class="active" href="#">home</a></li> <!-- add event listener to hide nav ul -->
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#">games</a></li>
+                    <li><a href="#">more</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <ul id="menu">
+                <li><a href="about.html">
+                    <figure>
+                        <img src="img/about.png" />
+                        <figcaption>About</figcaption>
+                    </figure></a></li>
+                <li><a href="#">
+                    <figure>
+                        <img src="img/games.png" />
+                        <figcaption>Games</figcaption>
+                    </figure></a></li>
+                <li><a href="#">
+                    <figure>
+                        <img src="img/more.png" />
+                        <figcaption>More</figcaption>
+                    </figure></a></li>
+                <li><a href="#">
+                    <figure>
+                        <img src="img/contact.png" />
+                        <figcaption>Contact</figcaption>
+                    </figure></a></li>
+            </ul>
+            <section id="featured-game">
+                <h2>Game Spotlight</h2>
+                <a href="/games/theWindSword.html" data-game="theWindSword">The Wind Sword - Play now!</a>
+            </section>
+        </main>
+        <footer>&copy; breakAwake 2014. All rights reserved</footer>
+        <script src="js/ultilities.js"></script>
+        <script src="js/enhanceContent.js"></script>
+    </body>
+</html>

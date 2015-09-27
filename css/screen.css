@@ -1,0 +1,230 @@
+/* line 5, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/1-modules/_body.scss */
+html {
+  background: #ffdac2;
+}
+
+/* line 5, ../sass/1-modules/_body.scss */
+body {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 100%;
+  height: 100%;
+  font-family: 'Raleway', Helvetica, Verdana, Arial, sans-serif;
+}
+
+/* line 3, ../sass/1-modules/_header.scss */
+header {
+  position: relative;
+  padding: 1%;
+  background: #444444;
+}
+/* line 8, ../sass/1-modules/_header.scss */
+header:before, header:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  background: #444444;
+  top: 0;
+  bottom: 0;
+  width: 3%;
+}
+/* line 17, ../sass/1-modules/_header.scss */
+header:before {
+  right: 100%;
+  margin-right: -0.5%;
+}
+/* line 21, ../sass/1-modules/_header.scss */
+header:after {
+  left: 100%;
+  margin-left: -0.5%;
+}
+/* line 25, ../sass/1-modules/_header.scss */
+header img {
+  margin: 2%;
+  max-width: 300px;
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+/* line 1, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav {
+  background: url("../img/navBtn.png") center center no-repeat #1e1e1e;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'." + $path-to-img + "'", sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/navBtn.png', sizingMethod='scale')";
+  background-image: "url(../img/navBtn.png)";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  margin-top: 1%;
+  margin-right: 0.5%;
+  width: 52px;
+  height: 49px;
+}
+/* line 11, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav ul {
+  display: none;
+}
+/* line 14, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover {
+  background-color: #333;
+}
+/* line 16, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul {
+  padding: 3%;
+  display: block;
+  width: 70%;
+  height: 50%;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  height: auto;
+  z-index: 5;
+  background: #1e1e1e;
+}
+/* line 27, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li {
+  border-radius: 3px 3px 0 0;
+  margin-top: 4%;
+  border-top: 1px #cacaca solid;
+  display: block;
+  padding: 0.7em;
+  text-align: center;
+}
+/* line 35, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li:first-child {
+  margin-top: 0;
+}
+/* line 38, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li:hover {
+  border: none;
+  background: #4b4b4b;
+}
+/* line 42, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #ffe1cc;
+}
+/* line 46, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li a.active {
+  color: #ff6700;
+}
+
+/* line 1, ../sass/1-modules/_main.scss */
+main {
+  background: #ffdac2;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  /*  // removes the outer borders of the grid by using the background color
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 3px;
+        background: $background-color;
+        z-index: 2;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 4px;
+        background: $background-color;
+        z-index: 2;
+    }*/
+}
+/* line 15, ../sass/0-plugins/bourbon/addons/_clearfix.scss */
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 1, ../sass/1-modules/_footer.scss */
+footer {
+  float: right;
+  padding: 2% 0 0 3%;
+  color: #444444;
+  text-align: right;
+  width: 100%;
+  font-size: 0.75em;
+}
