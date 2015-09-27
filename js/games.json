@@ -1,0 +1,10 @@
+{ "games" :
+    {
+        "theWindSword": 
+        {
+            "title": "The Wind Sword",
+            "description": "Embark on a fantastic journey, following Sir Cooker and his quest to save all cookies of the kingdom from the grasp of the evil Knight Moonlight.",
+            "icon": "dummyIcon.png"
+        } 
+    }
+}

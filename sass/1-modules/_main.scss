@@ -1,0 +1,30 @@
+main {
+    background: $background-color;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include clearfix;
+    margin-top: 1%;
+    
+  /*  // removes the outer borders of the grid by using the background color
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 3px;
+        background: $background-color;
+        z-index: 2;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 4px;
+        background: $background-color;
+        z-index: 2;
+    }*/
+}

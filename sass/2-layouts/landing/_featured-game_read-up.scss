@@ -1,0 +1,66 @@
+#featured-game, #read-up {
+    overflow: auto;
+    width: 100%;
+    border: none !important;
+    h2 {
+        font-size: 1.7em;
+        width: 75%;
+        color: $logo-dark-grey;
+        margin-bottom: 0.5%;
+        border-bottom: 1px solid $logo-orange;
+    }
+    a {
+        display: block;
+        color: $link-color;
+        margin-top: 0.5em;
+        margin-right: 1em;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 480px) and (min-height: 320px), only screen and (max-width: 500px) and (min-height: 520px) {
+    #featured-game, #read-up {  
+        h2 {
+            font-size: 1.7em;
+            font-weight: bold;
+            width: 75%;
+            margin-bottom: 1.5%;
+        }
+        img {
+            margin-top: 2%;
+            float: left;
+            max-width: 27%;
+        }
+        h3 {
+            @include box-size;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 0.2em;
+            float: right;
+            width: 70%;
+        }
+        p {
+            margin-right: 0.8em;
+            float: right;
+            max-width: 67%;
+        }
+        button {
+            clear: right;
+            @include box-size;
+            @include background-image(linear-gradient($btn-color, darken($btn-color, 10%)));
+            @include linear-gradient($btn-color, darken($btn-color, 10%));
+            border-radius: 2px;
+            border: none;
+            border-top: 1px solid lighten($btn-color, 40%);
+            padding: 0.5em;
+            float: right;
+            margin: 0.7em 0.7em 0 0.7em;
+            color: $light-text-color;
+            font-size: 1.2em;
+            &:hover {
+                border: none;
+                background: darken($btn-color, 15%);
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@media only screen and (min-width: 30em) {
+    header {
+        nav {
+            &:hover ul {
+                z-index: 5;
+                top: 4%;    
+                max-width: 55%;
+                left: 22.5%;
+                padding: 0.4em;
+                li {
+                    padding: 0.2em;
+                    margin-top: 1.5%;
+                }
+            }
+        }
+    }
+    main {
+        #menu {
+            margin-top: 1%;
+            li {
+                width: 24.625%;
+                padding: 2% 0 2% 0;
+            }
+            li:first-child {
+                margin-left: 0;
+            }
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

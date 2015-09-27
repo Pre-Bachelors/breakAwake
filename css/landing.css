@@ -1,0 +1,725 @@
+<<<<<<< HEAD
+/* 
+ * #ff6700 - logo's orange 
+ * #646464 - logo's lighter grey
+ * #1e1e1e - logo's darker grey
+*/
+@import url(styles.css);
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    min-height: 80%;
+    overflow: hidden;
+}
+
+.main_content {
+	position:  absolute;
+	top: 50%;
+	left: 50%;
+}
+.content {
+	position:  absolute;
+	top:20%;
+    left:35%;
+    font-size: 115%;
+}
+.top.left .content{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+.top.right .content{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+.bottom.left .content{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+}
+.bottom.right .content{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+}
+
+
+.menu {
+    border: 4px solid black;
+    position: absolute;
+}
+.menu:before {
+	content: "";
+	display: block;
+	margin-top: 100%; 	/* ratio of 1:1 */
+}
+.main {
+    width: 30%;
+    border-radius: 50%;
+    
+    text-indent: -9999px;
+    background-color: #ccc;
+    background-image: url("../img/circle_logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    z-index: 1;
+    
+    /* to center*/
+    left: 50%;
+    top: 50%;
+    margin-left: -15%; /* negative left margin that’s half its width (to center element) */
+    margin-top: -15%;
+}
+
+.option {
+    width: 21.21320344%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.top {
+    bottom: 50%;
+    margin-bottom: -2.3%;
+}
+.bottom {   
+    top: 50%;
+    margin-top: -1.875%;
+}
+.left {
+    right: 50%;
+    margin-right: -2.3%;
+}
+.right {
+    left: 50%;
+    margin-left: -1.875%;
+}
+
+.top.left{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+.top.right{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+.bottom.left{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+}
+.bottom.right{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+}
+
+.menu:hover {
+    color: #ff6700;
+    border-color: #ff6700;
+}
+=======
+/* line 5, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/1-modules/_body.scss */
+html {
+  background: #ffdac2;
+}
+
+/* line 5, ../sass/1-modules/_body.scss */
+body {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 100%;
+  height: 100%;
+  font-family: 'Raleway', Helvetica, Verdana, Arial, sans-serif;
+}
+
+/* line 3, ../sass/1-modules/_header.scss */
+header {
+  position: relative;
+  padding: 1%;
+  background: #444444;
+}
+/* line 8, ../sass/1-modules/_header.scss */
+header:before, header:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  background: #444444;
+  top: 0;
+  bottom: 0;
+  width: 3%;
+}
+/* line 17, ../sass/1-modules/_header.scss */
+header:before {
+  right: 100%;
+  margin-right: -0.5%;
+}
+/* line 21, ../sass/1-modules/_header.scss */
+header:after {
+  left: 100%;
+  margin-left: -0.5%;
+}
+/* line 25, ../sass/1-modules/_header.scss */
+header img {
+  margin: 2%;
+  max-width: 300px;
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+/* line 1, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav {
+  background: url("../img/navBtn.png") center center no-repeat #1e1e1e;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'." + $path-to-img + "'", sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/navBtn.png', sizingMethod='scale')";
+  background-image: "url(../img/navBtn.png)";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  margin-top: 1%;
+  margin-right: 0.5%;
+  width: 52px;
+  height: 49px;
+}
+/* line 11, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav ul {
+  display: none;
+}
+/* line 14, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover {
+  background-color: #333;
+}
+/* line 16, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul {
+  padding: 3%;
+  display: block;
+  width: 70%;
+  height: 50%;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  height: auto;
+  z-index: 5;
+  background: #1e1e1e;
+}
+/* line 27, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li {
+  border-radius: 3px 3px 0 0;
+  margin-top: 4%;
+  border-top: 1px #cacaca solid;
+  display: block;
+  padding: 0.7em;
+  text-align: center;
+}
+/* line 35, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li:first-child {
+  margin-top: 0;
+}
+/* line 38, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li:hover {
+  border: none;
+  background: #4b4b4b;
+}
+/* line 42, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #ffe1cc;
+}
+/* line 46, ../sass/2-layouts/landing/mobile/modules/_nav.scss */
+header nav:hover ul li a.active {
+  color: #ff6700;
+}
+
+/* line 1, ../sass/1-modules/_main.scss */
+main {
+  background: #ffdac2;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  /*  // removes the outer borders of the grid by using the background color
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 3px;
+        background: $background-color;
+        z-index: 2;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 4px;
+        background: $background-color;
+        z-index: 2;
+    }*/
+}
+/* line 15, ../sass/0-plugins/bourbon/addons/_clearfix.scss */
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 1, ../sass/1-modules/_footer.scss */
+footer {
+  float: right;
+  padding: 2% 0 0 3%;
+  color: #444444;
+  text-align: right;
+  width: 100%;
+  font-size: 0.75em;
+}
+
+/* line 2, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu li, main #featured-game, main #read-up {
+  background-color: #ffdac2;
+  margin: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #ffdac2;
+  overflow: hidden;
+  float: left;
+  padding: 1em;
+  border-right: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+  cursor: pointer;
+}
+/* line 13, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu li:hover, main #featured-game:hover, main #read-up:hover {
+  background: rgba(255, 169, 112, 0.8);
+}
+/* line 17, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu {
+  position: relative;
+  clear: both;
+  overflow: auto;
+  list-style: none;
+}
+/* line 11, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_bullets.scss */
+main #menu li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 22, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+/* line 25, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu li:nth-child(2), main #menu li:nth-child(4) {
+  border-right: none;
+}
+/* line 28, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu li:nth-child(3), main #menu li:nth-child(4) {
+  border-bottom: none;
+}
+/* line 31, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu li a {
+  text-decoration: none;
+  font-size: 1.7em;
+  color: #ff6700;
+}
+/* line 35, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu li a figure {
+  text-align: center;
+}
+/* line 41, ../sass/2-layouts/landing/mobile/modules/_main-menu.scss */
+main #menu:before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -31%);
+  background: url("../img/breakAwakeLogoSQUARE.png") center center no-repeat;
+  background-color: #ffdac2;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+/* line 1, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+#featured-game, #read-up {
+  overflow: auto;
+  width: 100%;
+  border: none !important;
+}
+/* line 5, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+#featured-game h2, #read-up h2 {
+  font-size: 1.7em;
+  width: 75%;
+  color: #1e1e1e;
+  margin-bottom: 0.5%;
+  border-bottom: 1px solid #ff6700;
+}
+/* line 12, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+#featured-game a, #read-up a {
+  display: block;
+  color: #004c4d;
+  margin-top: 0.5em;
+  margin-right: 1em;
+  text-align: right;
+}
+
+@media only screen and (min-width: 480px) and (min-height: 320px), only screen and (max-width: 500px) and (min-height: 520px) {
+  /* line 23, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+  #featured-game h2, #read-up h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    width: 75%;
+    margin-bottom: 1.5%;
+  }
+  /* line 29, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+  #featured-game img, #read-up img {
+    margin-top: 2%;
+    float: left;
+    max-width: 27%;
+  }
+  /* line 34, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+  #featured-game h3, #read-up h3 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.2em;
+    float: right;
+    width: 70%;
+  }
+  /* line 42, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+  #featured-game p, #read-up p {
+    margin-right: 0.8em;
+    float: right;
+    max-width: 67%;
+  }
+  /* line 47, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+  #featured-game button, #read-up button {
+    clear: right;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #099;
+    background-image: -webkit-linear-gradient(#099, #006666);
+    background-image: linear-gradient(#099, #006666);
+    border-radius: 2px;
+    border: none;
+    border-top: 1px solid #66ffff;
+    padding: 0.5em;
+    float: right;
+    margin: 0.7em 0.7em 0 0.7em;
+    color: #ffe1cc;
+    font-size: 1.2em;
+  }
+  /* line 60, ../sass/2-layouts/landing/_featured-game_read-up.scss */
+  #featured-game button:hover, #read-up button:hover {
+    border: none;
+    background: #004c4d;
+  }
+}
+@media only screen and (min-width: 30em) {
+  /* line 4, ../sass/2-layouts/landing/_mobile-portrait.scss */
+  header nav:hover ul {
+    z-index: 5;
+    top: 4%;
+    max-width: 55%;
+    left: 22.5%;
+    padding: 0.4em;
+  }
+  /* line 10, ../sass/2-layouts/landing/_mobile-portrait.scss */
+  header nav:hover ul li {
+    padding: 0.2em;
+    margin-top: 1.5%;
+  }
+
+  /* line 18, ../sass/2-layouts/landing/_mobile-portrait.scss */
+  main #menu {
+    margin-top: 1%;
+  }
+  /* line 20, ../sass/2-layouts/landing/_mobile-portrait.scss */
+  main #menu li {
+    width: 24.625%;
+    padding: 2% 0 2% 0;
+  }
+  /* line 24, ../sass/2-layouts/landing/_mobile-portrait.scss */
+  main #menu li:first-child {
+    margin-left: 0;
+  }
+  /* line 27, ../sass/2-layouts/landing/_mobile-portrait.scss */
+  main #menu:before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 45.75em) {
+  /* line 6, ../sass/2-layouts/landing/_tablet.scss */
+  header {
+    max-height: 7em;
+  }
+  /* line 8, ../sass/2-layouts/landing/_tablet.scss */
+  header img {
+    height: 6em;
+    width: auto;
+  }
+  /* line 12, ../sass/2-layouts/landing/_tablet.scss */
+  header input {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 2%;
+    display: inline-block;
+    float: right;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #646464;
+    color: #ffe1cc;
+    padding: 0.5% 1% 0;
+    margin-right: 1%;
+  }
+  /* line 23, ../sass/2-layouts/landing/_tablet.scss */
+  header input:hover, header input:active, header input:focus {
+    background: #1e1e1e;
+  }
+  /* line 27, ../sass/2-layouts/landing/_tablet.scss */
+  header button {
+    display: inline-block;
+    float: right;
+    background: url(../img/searchBtn.png);
+    width: 32px;
+    height: 32px;
+    border: none;
+    margin-top: 2%;
+  }
+  /* line 35, ../sass/2-layouts/landing/_tablet.scss */
+  header button:hover {
+    cursor: pointer;
+  }
+
+  /* line 42, ../sass/2-layouts/landing/_tablet.scss */
+  main #menu {
+    height: 100%;
+    width: 39.5%;
+    display: inline-block;
+    float: left;
+  }
+  /* line 47, ../sass/2-layouts/landing/_tablet.scss */
+  main #menu li {
+    width: 49.75%;
+    float: left;
+    margin: 0;
+    padding: 3%;
+  }
+  /* line 53, ../sass/2-layouts/landing/_tablet.scss */
+  main #menu:before {
+    display: block;
+  }
+  /* line 57, ../sass/2-layouts/landing/_tablet.scss */
+  main #featured-game, main #read-up {
+    border-left: 1px solid #1e1e1e !important;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 58%;
+    margin-top: 1%;
+    display: inline-block;
+    float: left;
+    padding-bottom: 8%;
+  }
+  /* line 66, ../sass/2-layouts/landing/_tablet.scss */
+  main #featured-game h3, main #read-up h3 {
+    padding-top: 2%;
+  }
+  /* line 69, ../sass/2-layouts/landing/_tablet.scss */
+  main #featured-game button, main #read-up button {
+    position: absolute;
+    left: 2%;
+    bottom: 3%;
+  }
+  /* line 73, ../sass/2-layouts/landing/_tablet.scss */
+  main #featured-game button:last-child, main #read-up button:last-child {
+    left: auto;
+    right: 2%;
+  }
+  /* line 79, ../sass/2-layouts/landing/_tablet.scss */
+  main #featured-game {
+    border-bottom: 1px solid #1e1e1e !important;
+  }
+  /* line 82, ../sass/2-layouts/landing/_tablet.scss */
+  main #read-up {
+    margin-top: 0;
+    padding-bottom: 1%;
+  }
+  /* line 85, ../sass/2-layouts/landing/_tablet.scss */
+  main #read-up a {
+    padding-right: 20%;
+  }
+}
+@media only screen and (min-width: 52.5em) {
+  /* line 3, ../sass/2-layouts/landing/_big-tablet.scss */
+  header {
+    height: 12em;
+    max-height: 100%;
+  }
+  /* line 6, ../sass/2-layouts/landing/_big-tablet.scss */
+  header nav {
+    display: none;
+  }
+  /* line 9, ../sass/2-layouts/landing/_big-tablet.scss */
+  header button, header input {
+    position: absolute;
+    top: 0;
+    right: 1%;
+  }
+  /* line 14, ../sass/2-layouts/landing/_big-tablet.scss */
+  header input {
+    right: 4%;
+  }
+  /* line 17, ../sass/2-layouts/landing/_big-tablet.scss */
+  header img {
+    display: block;
+    margin: 0 auto 1.8% auto;
+    height: 8em;
+  }
+  /* line 22, ../sass/2-layouts/landing/_big-tablet.scss */
+  header h2 {
+    width: auto;
+    text-align: center;
+    color: #ffe7d6;
+    font-size: 1.5em;
+  }
+  /* line 28, ../sass/2-layouts/landing/_big-tablet.scss */
+  header ul {
+    display: inline-block;
+  }
+  /* line 30, ../sass/2-layouts/landing/_big-tablet.scss */
+  header ul li {
+    display: inline;
+    margin-left: 3%;
+  }
+  /* line 33, ../sass/2-layouts/landing/_big-tablet.scss */
+  header ul li a {
+    text-decoration: none;
+    color: #1e1e1e;
+  }
+  /* line 36, ../sass/2-layouts/landing/_big-tablet.scss */
+  header ul li a:hover {
+    color: black;
+  }
+  /* line 40, ../sass/2-layouts/landing/_big-tablet.scss */
+  header ul li.active a {
+    color: black;
+    border-bottom: 1px solid #ff6700;
+  }
+
+  /* line 49, ../sass/2-layouts/landing/_big-tablet.scss */
+  main #featured-game {
+    padding-bottom: 1%;
+  }
+  /* line 51, ../sass/2-layouts/landing/_big-tablet.scss */
+  main #featured-game button {
+    position: static;
+    display: inline-block;
+    float: none;
+    margin-left: 5%;
+  }
+  /* line 56, ../sass/2-layouts/landing/_big-tablet.scss */
+  main #featured-game button:last-child {
+    margin-right: 0;
+    margin-left: 11%;
+  }
+
+  /* line 63, ../sass/2-layouts/landing/_big-tablet.scss */
+  footer {
+    padding-top: 0.7%;
+  }
+}
+>>>>>>> 26e92916fd50745fdfd9143360c942a95a3f13e0
